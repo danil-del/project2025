@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #FFFAFA;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 30px;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    margin-right: -450px;
+}
+
+.paw {
+    margin-bottom: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #0B1556;
+    font-size: 24px;
+    transition: color 0.3s;
+    font-family: "Hammersmith One", sans-serif;
+}
+
+.nav-links a:hover {
+    color: #2c3e50;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    margin-bottom: 40px;
+}
+.dog {
+    margin-left: 485px;
+    margin-top: -1000px;
+}
+.dog-title {
+    font-size: 180px;
+    font-weight: bold;
+    color: #0B1556;
+    margin-bottom: 15px;
+    margin-right: 717px;
+    text-transform: uppercase;
+    font-family: "Holtwood One SC", serif;
+
+}
+
+.subtitle {
+    font-size: 32px;
+    color: #7f8c8d;
+    margin-bottom: 40px;
+    margin-right: 802px;
+    text-align: left;
+    font-family: "Gruppo", sans-serif;
+    color: #0B1556;
+    white-space: nowrap
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #FDEE91;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-right: 983px;
+    white-space: nowrap
+}
+
+.cta-button:hover {
+    background-color: #f6e366;
+    transform: scale(1.05);
+}
+
+.happy-section {
+    background-color: #fff;
+}
+
+.pet1 {
+    margin-top: -1000px;
+    margin-left: 820px;
+}
+
+.main-title {
+    text-align: center;
+    margin: 0 0 30px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #2c3e50;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-left: 707px;
+    font-family: "Holtwood One SC", serif;
+    color: #0B1556;
+    margin-top: -120px;
+
+}
+
+.decorative-text {
+    text-align: center;
+    margin: 30px auto;
+    font-size: 18px;
+    color: #7f8c8d;
+    line-height: 1.8;
+    font-family: 'Courier New', monospace;
+    max-width: 450px;
+    margin-left: 700px ;
+}
+
+.best-in {
+    text-align: center;
+    margin: 60px 0 30px;
+    font-size: 24px;
+    color: #2c3e50;
+    position: relative;
+}
+
+.best-in:after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: #e74c3c;
+    margin: 15px auto;
+}
+
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    .nav-links {
+        justify-content: center;
+    }
+    
+    .dog-title {
+        font-size: 48px;
+    }
+    
+    .subtitle {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .dog-title {
+        font-size: 36px;
+    }
+    
+    .subtitle {
+        font-size: 18px;
+    }
+    
+    .cta-button {
+        padding: 12px 24px;
+        font-size: 16px;
+    }
+}
+
