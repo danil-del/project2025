@@ -31,6 +31,7 @@ header {
     padding: 15px 0;
     border-bottom: 1px solid #ddd;
     margin-bottom: 30px;
+    margin-top: -35px;
 }
 
 .logo {
@@ -68,7 +69,7 @@ header {
 }
 .dog {
     margin-left: 485px;
-    margin-top: -1000px;
+    margin-top: -450px;
 }
 .dog-title {
     font-size: 180px;
@@ -78,7 +79,6 @@ header {
     margin-right: 717px;
     text-transform: uppercase;
     font-family: "Holtwood One SC", serif;
-
 }
 
 .subtitle {
@@ -128,11 +128,8 @@ header {
     color: #2c3e50;
     text-transform: uppercase;
     letter-spacing: 2px;
-    margin-left: 707px;
     font-family: "Holtwood One SC", serif;
     color: #0B1556;
-    margin-top: -120px;
-
 }
 
 .decorative-text {
@@ -142,8 +139,7 @@ header {
     color: #7f8c8d;
     line-height: 1.8;
     font-family: 'Courier New', monospace;
-    max-width: 450px;
-    margin-left: 700px ;
+
 }
 
 .best-in {
@@ -164,7 +160,78 @@ header {
 }
 
 
-/* Адаптивность */
+.decorative-box {
+    margin-left: 700px;
+    margin-top: -500px;
+}
+.img2 {
+    margin-left: 110px;
+    margin-top: 30px;
+}
+.human {
+    margin-top: -30px;
+}
+.square {
+    display: inline-block;
+    background-color: #0B1556;
+    width: 106px;
+    height: 106px;
+    margin-top: 120px;
+}
+.dark {
+    background-color: #0B1556;
+}
+.light {
+    background-color: #FDEE91;
+}
+
+.weare {
+    display: flex;
+    gap: 86px;
+    justify-content: space-between;
+}
+
+.bestitle {
+    color: #0B1556;
+    font-size: 36px;
+    text-align: center;
+    margin-top: 143px;
+    font-family: "Hammersmith One", sans-serif;
+    letter-spacing: 5%;
+    font-weight: 100px;
+}
+
+.shopan {
+    font-size: 36px;
+    color: #0B1556;
+    font-family: "Hammersmith One", sans-serif;
+    text-align: center;
+    margin-top: 95px;
+}
+.button-line {
+    margin-top: 95px;
+    display: flex;
+    gap: 274px ;
+    justify-content: space-between;
+}
+
+.button-shop {
+    padding: 10px 37px 10px 37px;
+    font-weight: 200px;
+    font-size: 32px ;
+    font-family: "Hammersmith One", sans-serif;
+    cursor: pointer;
+}
+.btncolor {
+    background-color: #0B1556;
+    color: #f6e366 ;
+}
+.btn2color {
+    background-color: #f6e366;
+    color: #0B1556;
+    border: none;
+}
+
 @media (max-width: 768px) {
     header {
         flex-direction: column;
