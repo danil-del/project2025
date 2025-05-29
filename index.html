@@ -12,12 +12,30 @@
     <div class="container">
         <section class="hero">
             <header>
-                <div class="logo"><img src="./Group 2.svg" alt=""></div>
-                <div class="nav-links">
-                    <a href="#">Account</a>
-                    <a href="#">Social media</a>
+                <div class="logo">
+                    <a class="img3" href="http://127.0.0.1:3002/index.html">
+                        <img src="./Group 2.svg" alt="">
                 </div>
-                <img class="paw" src="./paw 1.svg" alt="">
+                </a>
+                <div class="nav-links">
+                    <a href="#Account">Account</a>
+                    <a href="#Social-media">Social media</a>
+                </div>
+                <a href="http://127.0.0.1:3006/index.html"><button class="btnlang">RUS</button></a>
+                <nav class="navbar">
+                    <button class="burger" id="burger" aria-label="Открыть меню">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </button>
+
+                    <ul class="nav-links2" id="nav-links">
+                        <li><a href="#">Favorites</a></li>
+                        <li><a href="#About us">About us</a></li>
+                        <li><a href="#Donate">Donate</a></li>
+                        <li><a href="#">Contacts</a></li>
+                    </ul>
+                </nav>
             </header>
             <h1 class="dog-title">DOG.</h1>
             <p class="subtitle">Your best friend is waiting for you.</p>
@@ -26,34 +44,244 @@
         </section>
 
         <section class="happy-section" id="about">
-            <img class="human" src="./Group 11.png" alt>
+            <div class="circle cr1"></div>
+            <div class="circle cr2"></div>
             <div class="decorative-box">
                 <img class="img2" src="./Group 10.svg" alt="">
                 <h2 class="main-title">HAPPY PETS,<br>HAPPY HUMANS</h2>
                 <p class="decorative-text">gfigosogdisdgjggndgsigjidsgsidnggiojgfdsgsggssg fkdkosgoksogksdgk </p>
             </div>
-            <h2 class="bestitle">We are the best in</h2>
-                <div class="weare">
-                    <div class="square dark"></div>
-                    <div class="square light"></div>
-                    <div class="square dark"></div>
-                    <div class="square dark"></div>
-                    <div class="square light"></div>
-                    <div class="square dark"></div>
-                </div>
-        <section class="shop">
-            <h2 class="shopan">Our animals</h2>
-            <div>
-                <div class="button-line">
-                    <button class="button-shop btncolor">Cats</button>
-                    <button class="button-shop btn2color">Dogs</button>
-                    <button class="button-shop btncolor">Others</button>
-                </div>
+            <img class="human" src="./Group 11.png" alt>
+            <h2 class="bestitle" id="About us">We are best in</h2>
+            <div class="weare" >
+                <div class="square dark"></div>
+                <div class="square light"></div>
+                <div class="square dark"></div>
+                <div class="square dark"></div>
+                <div class="square light"></div>
+                <div class="square dark"></div>
             </div>
-        </section>    
-
-
+            <div class="orangebl"></div>
+            <div class="whyyou">
+                <h2 class="titlewhy">Why you should choose us</h2>
+                <p class="textwhy">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem dicta
+                    necessitatibus neque, ullam rem atque id dolorem quod nisi, modi, natus soluta maiores sed delectus
+                    voluptas non quas alias? Expedita eum, ad quod nemo amet harum omnis distinctio assumenda tempore
+                    ipsa quae impedit. Officiis provident molestiae natus doloremque temporibus dolore!</p>
+            </div>
+            <img class="cutedog" src="./Group 18.png" alt="">
         </section>
+
+        <section class="shop" id="animals">
+            <h2 class="shopan">Our animals</h2>
+            <div class="button-line">
+                <button class="button-shop" onclick="toggleCategory('cat')">Cats</button>
+                <button class="button-shop" onclick="toggleCategory('dog')">Dogs</button>
+                <button class="button-shop" onclick="toggleCategory('other')">Others</button>
+            </div>
+
+
+
+            <div class="animal-gallery">
+                <div class="row static-row">
+                    <div class="animal-card base"></div>
+                    <div class="animal-card base"></div>
+                    <div class="animal-card base"></div>
+                </div>
+
+                <div class="row" id="extra-row"></div>
+            </div>
+        </section>
+
+
+        <section class="login" id="Account">
+            <h4 class="stay">Stay tuned</h4>
+            <div class="login-space">
+                <h2 class="login2">REGISTER</h2>
+                <input type="email" name="email" id="email" placeholder="Email">
+                <input type="password" name="password" id="password" placeholder="Password">
+                <button class="btn-log" onclick="register()">Register</button>
+                <p class="news">Subscribe to our newsletter and stay up to date with all the news</p>
+            </div>
+            <img class="goldog" src="./Group 17.png" alt="">
+        </section>rc="./Group 17.png" alt="">
+        </section>
+
+        <section class="donation" id="Donate">
+            <h2 class="kidness">Do good</h2>
+            <div class="don">
+                <div class="textdon">
+                    <h3 class="donationmotivation">Donate money to the shelter to make the animals feel even better</h3>
+                    <p class="donatemot"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae debitis,
+                        delectus
+                        ullam possimus consequatur laborum necessitatibus obcaecati porro aut temporibus maxime fugiat
+                        tempore dolorum quidem! Ad a ullam sit odit?</p>
+                        <img class="footimg" src="./footprint.png" alt="">
+                    </div>
+                    <button class="donatebtn">Donate</button>
+                <img class="imgline" src="./Rectangle 41.png" alt="">
+            </div>
+        </section>
+
+
+        <section class="social-media" id='Social-media'>
+            <h3 class="textt">Our social medias</h3>
+            <div class="socialbox">
+                <img src="./icons8-vk.svg" class="wk" alt="">
+                <img src="./icons8-телеграм (1).svg" class="tg" alt="">
+            </div>
+            <div class="contacts">
+                <a href="tel:+73832149291"></a>
+            </div>
+        </section>
+        <a href="#top" id="scroll-to-top" class="scroll-to-top-button"><img src="./Arrow 2.svg" alt=""></a>
+
+        <script>
+            let currentCategory = null;
+
+            async function fetchImage(type) {
+                try {
+                    if (type === 'dog') {
+                        const response = await fetch('https://dog.ceo/api/breeds/image/random');
+                        const data = await response.json();
+                        return data.message;
+                    } else if (type === 'cat') {
+                        const response = await fetch('https://api.thecatapi.com/v1/images/search');
+                        const data = await response.json();
+                        return data[0].url;
+                    } else {
+                        return `https://random.imagecdn.app/400/300?timestamp=${Date.now()}`;
+                    }
+                } catch (error) {
+                    console.error("Image fetch error:", error);
+                    return '';
+                }
+            }
+
+            async function toggleCategory(category) {
+                const extraRow = document.getElementById('extra-row');
+
+                if (currentCategory === category) {
+                    extraRow.innerHTML = '';
+                    currentCategory = null;
+                } else {
+                    extraRow.innerHTML = '';
+                    for (let i = 0; i < 3; i++) {
+                        const block = document.createElement('div');
+                        block.classList.add('animal-card', `${category}-block`);
+                        block.style.opacity = '0';
+                        block.style.transform = 'translateY(20px)';
+                        block.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+
+                        const imageUrl = await fetchImage(category);
+
+                        const img = document.createElement('img');
+                        img.src = imageUrl;
+                        img.alt = category;
+                        img.style.width = '100%';
+                        img.style.height = '100%';
+                        img.style.objectFit = 'cover';
+                        img.style.borderRadius = '12px';
+
+                        block.appendChild(img);
+
+                        block.addEventListener('click', () => {
+                            window.open('http://127.0.0.1:3000/index.html', '_blank');
+                        });
+
+                        setTimeout(() => {
+                            block.style.opacity = '1';
+                            block.style.transform = 'translateY(0)';
+                        }, 50 * i);
+
+                        extraRow.appendChild(block);
+                    }
+                    currentCategory = category;
+                }
+            }
+
+            document.addEventListener('click', function (event) {
+                const isButtonClick = event.target.closest('.button-shop');
+                const isInsideExtraRow = event.target.closest('#extra-row');
+                if (!isButtonClick && !isInsideExtraRow && currentCategory !== null) {
+                    document.getElementById('extra-row').innerHTML = '';
+                    currentCategory = null;
+                }
+            });
+
+
+            function register() {
+                const email = document.getElementById('email').value.trim();
+                const password = document.getElementById('password').value.trim();
+
+                if (!email || !password) {
+                    alert("Please fill in both fields.");
+                    return;
+                }
+
+ 
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailRegex.test(email)) {
+                    alert("Please enter a valid email.");
+                    return;
+                }
+
+                const users = JSON.parse(localStorage.getItem('users')) || [];
+
+                const userExists = users.some(user => user.email === email);
+                if (userExists) {
+                    alert("User with this email already exists.");
+                    return;
+                }
+
+                users.push({ email, password });
+                localStorage.setItem('users', JSON.stringify(users));
+
+                alert("Registration successful!");
+                document.getElementById('email').value = '';
+                document.getElementById('password').value = '';
+            }
+
+            window.addEventListener("scroll", () => {
+                const scrollBtn = document.getElementById("scroll-to-top");
+                if (window.scrollY > 300) {
+                    scrollBtn.style.display = "block";
+                } else {
+                    scrollBtn.style.display = "none";
+                }
+            });
+
+
+            document.getElementById("scroll-to-top").addEventListener("click", (e) => {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+            const burger = document.getElementById('burger');
+            const navLinks = document.getElementById('nav-links');
+
+            burger.addEventListener('click', () => {
+                burger.classList.toggle('active');
+                navLinks.classList.toggle('active');
+                document.body.classList.toggle('menu-open');
+            });
+            document.querySelectorAll('#nav-links a').forEach(link => {
+                link.addEventListener('click', () => {
+                    document.getElementById('nav-links').classList.remove('active');
+                    document.getElementById('burger').classList.remove('active');
+                    document.body.classList.remove('menu-open');
+                });
+            });
+
+
+
+
+
+        </script>
+
+
+
+
+
 
     </div>
 </body>
