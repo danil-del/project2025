@@ -249,6 +249,7 @@ a:hover {
     transition: opacity 0.5s ease, transform 0.5s ease;
     font-family: "Montserrat", sans-serif;
 }
+
 .care-text.show {
     opacity: 1;
     transform: translateY(0);
@@ -278,6 +279,28 @@ a:hover {
     display: flex;
     gap: 274px;
     justify-content: space-between;
+}
+
+.contacts {
+    position: relative;
+}
+
+.hc {
+    position: absolute;
+    left: 80%;
+    bottom: 40px;
+    color: white;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+}
+
+.hc-1 {
+    position: absolute;
+    left: 80%;
+    bottom: 80px;
+    color: #FA996B;
+    font-size: 24px;
+    font-family: "Montserrat", sans-serif;
 }
 
 .button-shop {
@@ -355,6 +378,7 @@ a:hover {
     font-family: "Montserrat", sans-serif;
     font-size: 18px;
 }
+
 .btn-log:hover {
     transition: transform 0.3s ease;
     transform: scale(1.1);
@@ -478,7 +502,8 @@ a:hover {
     z-index: 50;
 
 }
-.donatebtn:hover{
+
+.donatebtn:hover {
     background-color: #f6e366;
     color: #ffffff;
     border-color: #f6e366;
@@ -520,13 +545,14 @@ a:hover {
 .textdon {
     margin-top: -600px;
 }
+
 .catplay {
     margin-left: 800px;
     margin-top: -100px;
     width: 400px;
     position: relative;
     top: 250px;
-    
+
 }
 
 .imgline {
@@ -794,11 +820,13 @@ body.menu-open {
     transition: transform 0.3s ease, filter 0.3s ease;
     transition: all 0.3s ease;
 }
+
 .footimg {
     width: 300px;
     margin-left: 450px;
     margin-top: -70px;
 }
+
 .shopan {
     font-size: 48px;
     color: #2B3348;
@@ -871,6 +899,7 @@ body.menu-open {
     transform: scale(0.95);
     opacity: 0;
 }
+
 .modal {
     display: none;
     position: fixed;
@@ -896,21 +925,29 @@ body.menu-open {
     animation: scaleUp 0.4s ease-in-out;
     text-align: center;
 }
-.modal-content h3, p{
+
+.modal-content h3,
+p {
     color: #2B3348;
     font-family: "Montserrat", sans-serif;
 
 }
 
 @keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes scaleUp {
     0% {
         transform: scale(0.7);
     }
+
     100% {
         transform: scale(1);
     }
@@ -942,6 +979,7 @@ body.menu-open {
     font-family: "Montserrat", sans-serif;
 
 }
+
 
 .donation-form input {
     width: 100%;
@@ -1219,6 +1257,14 @@ section {
         margin-right: auto !important;
     }
 
+    .hc,
+    .hc-1 {
+        position: static;
+        left: auto;
+        bottom: auto;
+        margin: 10px auto;
+    }
+
     .cta-button,
     .btn-log,
     .btn-log2,
@@ -1247,6 +1293,7 @@ section {
     .donatemot {
         text-align: center;
     }
+
     .bestitle {
         font-size: 20px;
         margin-top: 100px;
@@ -1311,16 +1358,18 @@ section {
     .footimg,
     .catplay,
     .dog-title,
-    .news, 
+    .news,
     .kidness,
     .donationmotivation,
     .donatemot,
     .circle {
         display: none;
     }
+
     .login2 {
         margin-bottom: 300px;
     }
+
     #email {
         margin-top: -230px;
     }
@@ -1329,12 +1378,13 @@ section {
         font-size: 24px;
         margin-top: -30px;
     }
+
     .donatebtn {
         margin-top: 200px;
         margin-bottom: -20px;
         margin-left: 50%;
     }
- 
+
 
     .donation {
         margin-top: 100px;
