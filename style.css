@@ -1187,21 +1187,33 @@ body.menu-open {
 section {
     animation: fadeIn 1s ease-in-out;
 }
+
 @media (max-width: 768px) {
 
     .dog {
         display: none;
     }
 
- 
+
     .nav-links {
         display: none;
     }
 
- 
-    .hero, .subtitle, .cta-button, .main-title, .decorative-text, 
-    .bestitle, .shopan, .stay, .login2, .donatemot,
-    .textdon, .titlewhy, .textwhy, .whyyou, .kidness {
+
+    .hero,
+    .subtitle,
+    .cta-button,
+    .main-title,
+    .decorative-text,
+    .bestitle,
+    .shopan,
+    .stay,
+    .login2,
+    .donatemot,
+    .textdon,
+    .titlewhy,
+    .textwhy,
+    .whyyou {
         text-align: center;
         margin-left: auto !important;
         margin-right: auto !important;
@@ -1216,20 +1228,28 @@ section {
         margin-right: auto !important;
         display: block;
     }
+
     .titlewhy {
         max-width: 90%;
         text-align: center;
     }
+
     .kidness {
         text-align: center;
         max-width: 90%;
     }
+
     .donationmotivation {
         text-align: center;
         margin-left: 40px;
     }
+
     .donatemot {
         text-align: center;
+    }
+    .bestitle {
+        font-size: 20px;
+        margin-top: 100px;
     }
 
 
@@ -1244,7 +1264,7 @@ section {
         align-items: center;
     }
 
- 
+
     .dog-title {
         font-size: 48px;
         margin: 0 auto 20px auto;
@@ -1272,6 +1292,7 @@ section {
         align-items: center;
         margin: 30px 0;
     }
+
     .whyyou {
         max-width: 90%;
     }
@@ -1286,12 +1307,60 @@ section {
     .orangebl,
     .decorative-box,
     .img2,
-    .human {
+    .human,
+    .footimg,
+    .catplay,
+    .dog-title,
+    .news, 
+    .kidness,
+    .donationmotivation,
+    .donatemot {
         display: none;
+    }
+    .login2 {
+        margin-bottom: 300px;
+    }
+    #email {
+        margin-top: -230px;
+    }
+
+    .stay {
+        font-size: 24px;
+        margin-top: -30px;
+    }
+    .donatebtn {
+        margin-top: 200px;
+        margin-bottom: -20px;
+        margin-left: 50%;
+    }
+ 
+
+    .donation {
+        margin-top: 100px;
+        margin-bottom: 1000px;
+    }
+
+    .donation h3 {
+        font-size: 20px;
     }
 
     .don {
         width: 90%;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+
+    .weare {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .socialbox {
@@ -1333,6 +1402,7 @@ section {
     .btnlang {
         margin: 10px auto;
         display: block;
+
     }
 
     .nav-links2 {
@@ -1343,4 +1413,5 @@ section {
     .nav-links2.active {
         right: 0;
     }
+
 }
